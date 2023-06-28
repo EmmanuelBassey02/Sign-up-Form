@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            display: grid;
+            gap: 7px;
+            height: 400px;
+            width: 700px;
+            background-color: rgb(242, 236, 236);
+            margin: auto;
+            margin-top: 80px;
+            padding: 20px;
+            grid-template-rows: auto;
+            grid-template-columns: 33% 30% auto;
+        }
+
+        .first-section {
+            background-color: rgb(242, 236, 236);
+            grid-template-rows: 40% 35% auto;
+            display: grid;
+            gap: 7px;
+            border-radius: 5px;
+        }
+
+        .first-section-div1 {
+            background-color: blueviolet;
+            border-radius: 5px;
+        }
+
+        .first-section-div2 {
+            background-color: rgb(242, 236, 236);
+            display: grid;
+            gap: 7px;
+            grid-template-columns: 50% auto;
+            border-radius: 5px;
+        }
+
+        .first-section-div3 {
+            background-color: rgb(3, 173, 3);
+            border-radius: 5px;
+        }
+
+        .first-section-div2-1 {
+            background-color: rgb(3, 173, 3);
+            border-radius: 5px;
+        }
+
+        .first-section-div2-2 {
+            background-color: rgb(242, 236, 236);
+            display: grid;
+            gap: 7px;
+            grid-template-rows: 25% 70%;
+            border-radius: 5px;
+        }
+
+        .first-section-div2-2-1 {
+            background-color: rgb(74, 195, 243);
+            border-radius: 5px;
+        }
+
+        .first-section-div2-2-2 {
+            background-color: red;
+            border-radius: 5px;
+        }
+
+        .second-section {
+            background-color: rgb(242, 236, 236);
+            display: grid;
+            grid-template-rows: 70% auto;
+            border-radius: 5px;
+            gap: 7px;
+        }
+
+        .second-section-div2 {
+            background-color: blueviolet;
+            border-radius: 5px;
+        }
+
+        .second-section-div1 {
+            background-color: rgb(242, 236, 236);
+            display: grid;
+            gap: 7px;
+            border-radius: 5px;
+            grid-template-rows: auto;
+            grid-template-columns: 50% auto;
+        }
+
+        .second-section-div1-1 {
+            background-color: rgb(3, 173, 3);
+            border-radius: 5px;
+        }
+
+        .second-section-div1-2 {
+            background-color: rgb(242, 236, 236);
+            display: grid;
+            gap: 7px;
+            border-radius: 5px;
+            grid-template-rows: 20% auto;
+        }
+
+        .second-section-div1-2-1 {
+            background-color: rgb(74, 195, 243);
+            border-radius: 5px;
+        }
+
+        .second-section-div1-2-2 {
+            background-color: red;
+            border-radius: 5px;
+        }
+
+        .third-section {
+            display: grid;
+            border-radius: 5px;
+            gap: 7px;
+            grid-template-rows: 30% 50% auto;
+            background-color: rgb(242, 236, 236);
+        }
+
+        .third-section-div1 {
+            display: grid;
+            border-radius: 5px;
+            gap: 7px;
+            grid-template-rows: 50% auto;
+        }
+
+        .third-section-div1-1 {
+            background-color: rgb(3, 173, 3);
+            border-radius: 5px;
+            grid-template-columns: auto;
+        }
+
+        .third-section-div1-2 {
+            display: grid;
+            gap: 7px;
+            border-radius: 5px;
+            grid-template-columns: 20% auto;
+            border-radius: 5px;
+        }
+
+        .third-section-div1-2-1 {
+            background-color: rgb(74, 195, 243);
+            border-radius: 5px;
+        }
+
+        .third-section-div1-2-2 {
+            background-color: red;
+            border-radius: 5px;
+        }
+
+        .third-section-div2 {
+            background-color: blueviolet;
+            border-radius: 5px;
+        }
+
+        .third-section-div3 {
+            background-color: rgb(74, 195, 243);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <!-- FIRST SECTION -->
+        <section class="first-section">
+
+            <div class="first-section-div1"></div>
+
+            <div class="first-section-div2">
+                <div class="first-section-div2-1"></div>
+
+                <div class="first-section-div2-2">
+                    <div class="first-section-div2-2-1"></div>
+                    <div class="first-section-div2-2-2"></div>
+                </div>
+            </div>
+
+
+            <div class="first-section-div3"></div>
+
+        </section>
+
+
+        <!-- SECOND SECTION -->
+        <section class="second-section">
+
+            <div class="second-section-div1">
+
+                <div class="second-section-div1-1"></div>
+
+                <div class="second-section-div1-2">
+                    <div class="second-section-div1-2-1"></div>
+                    <div class="second-section-div1-2-2"></div>
+                </div>
+
+            </div>
+            <div class="second-section-div2"></div>
+        </section>
+
+
+
+        <!-- THIRD SECTION -->
+        <section class="third-section">
+            <div class="third-section-div1">
+                <div class="third-section-div1-1"></div>
+                <div class="third-section-div1-2">
+                    <div class="third-section-div1-2-1"></div>
+                    <div class="third-section-div1-2-2"></div>
+                </div>
+            </div>
+
+            <div class="third-section-div2"></div>
+            <div class="third-section-div3"></div>
+        </section>
+    </main>
+
+</body>
+
+</html>
