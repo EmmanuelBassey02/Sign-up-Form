@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(to right, black, rgb(48, 48, 0));
+            padding-left: 10px;
+        }
+
+        main {
+            display: flex;
+            gap: 10px;
+        }
+
+        .div-one {
+            color: rgb(176, 174, 174);
+            margin-top: 10px;
+            text-align: center;
+            padding-top: 12px;
+            height: 250px;
+            width: 230px;
+            border-radius: 4px;
+            background-color: rgb(43, 43, 45);
+            box-shadow: 3px 3px 10px rgba(85, 85, 21, 0.9);
+        }
+
+        .div-two {
+            height: 470px;
+            border-radius: 4px;
+            width: 230px;
+            background-color: rgb(43, 43, 45);
+            margin-top: 50px;
+            padding-top: 10px;
+            padding-left: 6px;
+            text-align: center;
+            box-shadow: -2px -1px 15px rgba(64, 64, 20, 0.9);
+        }
+
+        a {
+            color: rgb(211, 211, 6);
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        ul {
+            display: flex;
+            gap: 35px;
+            list-style-type: none;
+            padding-top: 20px;
+        }
+
+        nav {
+            display: flex;
+            gap: 380px;
+            background: linear-gradient();
+            height: 65px;
+            background-color: black;
+            border-bottom: 2px solid yellow;
+            position: sticky;
+            top: 0;
+        }
+
+        .my-portfolio {
+            font-size: xx-large;
+            color: bisque;
+            padding-left: 20px;
+        }
+
+        .my {
+            color: yellow;
+        }
+
+        .Portfolio-color {
+            color: rgb(168, 171, 171);
+        }
+
+
+        /* HOVER EFFECT */
+        .home:hover {
+            height: 35px;
+            padding: auto;
+            padding-top: 5px;
+            width: 90px;
+            border-radius: 5px;
+            background-color: transparent;
+            border: 2px solid rgb(125, 125, 3);
+            text-align: center;
+        }
+
+        .blog:hover {
+            height: 35px;
+            padding: auto;
+            padding-top: 5px;
+            width: 90px;
+            border-radius: 5px;
+            background-color: transparent;
+            border: 2px solid rgb(125, 125, 3);
+            text-align: center;
+        }
+
+        .services:hover {
+            height: 35px;
+            padding: auto;
+            padding-top: 5px;
+            width: 90px;
+            border-radius: 5px;
+            background-color: transparent;
+            border: 2px solid rgb(125, 125, 3);
+            text-align: center;
+        }
+
+        .projects:hover {
+            height: 35px;
+            padding: auto;
+            padding-top: 5px;
+            width: 90px;
+            border-radius: 5px;
+            background-color: transparent;
+            border: 2px solid rgb(125, 125, 3);
+            text-align: center;
+        }
+
+        .awards:hover {
+            height: 35px;
+            padding: auto;
+            padding-top: 5px;
+            width: 90px;
+            border-radius: 5px;
+            background-color: transparent;
+            border: 2px solid rgb(125, 125, 3);
+            text-align: center;
+        }
+
+        .resume:hover {
+            height: 35px;
+            padding: auto;
+            padding-top: 5px;
+            width: 90px;
+            border-radius: 5px;
+            background-color: transparent;
+            border: 2px solid rgb(125, 125, 3);
+            text-align: center;
+        }
+
+        .profile-image {
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            border: 2.5px solid rgb(227, 227, 3);
+            border-top-style: dashed;
+            margin: 5px;
+        }
+
+        .fa-twitter {
+            font-size: 25px;
+            color: white;
+        }
+
+        .fa-facebook-f {
+            font-size: 25px;
+            color: white;
+        }
+
+        .fa-instagram {
+            font-size: 25px;
+            color: white;
+        }
+
+        .twitter {
+            border-radius: 50%;
+            height: 45px;
+            width: 45px;
+            background-color: skyblue;
+        }
+
+        .facebook {
+            border-radius: 50%;
+            height: 45px;
+            width: 45px;
+            background-color: blue;
+        }
+
+        .instagram {
+            border-radius: 50%;
+            height: 45px;
+            width: 45px;
+            background: linear-gradient(to right, rgb(94, 4, 177), rgb(236, 66, 95));
+        }
+
+        /* SECTION TWO STYLING */
+        .section-two-div1 {
+            margin-top: 10px;
+            width: 1000px;
+            height: 400px;
+            border-radius: 4px;
+            background-color: rgb(52, 58, 63);
+            box-shadow: -2px -1px 15px rgba(64, 64, 20, 0.9);
+        }
+
+        .numbers {
+            font-size: xx-large;
+            color: yellow;
+        }
+
+
+        .divclass {
+            background-color: rgb(48, 48, 0);
+            margin-top: 10px;
+            margin: auto;
+            color: rgb(176, 174, 174);
+            display: flex;
+            gap: 30px;
+            width: 900px;
+            height: 60px;
+            align-items: center;
+            position: relative;
+            top: -25px;
+            z-index: 1;
+            border-radius: 4px;
+            justify-content: center;
+            box-shadow: 3px 1px 10px rgb(176, 174, 174, 0.7);
+        }
+
+        p {
+            color: rgb(168, 171, 171);
+            font-weight: bolder;
+        }
+
+        .percent-100 {
+            width: 200px;
+            height: 5px;
+            border: 1px solid;
+            border-radius: 60px;
+            background-color: rgb(235, 18, 18);
+            gap: 50px;
+            align-items: center;
+        }
+
+        .skill-percent {
+            width: 189px;
+            text-align: center;
+            height: 3.3px;
+            border-radius: 60px;
+            margin-left: 0px;
+            background-color: yellow;
+        }
+
+        .html {
+            display: flex;
+            gap: 110px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <span class="my-portfolio">
+            <h1> <span class="my">My</span> <span class="Portfolio-color">Portfolio</span></h1>
+        </span>
+
+
+        <span>
+            <ul>
+                <li class="home"><a href="http://">•Home</a></li>
+                <li class="blog"><a href="http://">•Blog</a></li>
+                <li class="services"><a href="http://">•Services</a></li>
+                <li class="awards"><a href="http://">•Awards</a></li>
+                <li class="resume"><a href="http://">•Resume</a></li>
+                <li class="projects"><a href="http://">•Projects</a></li>
+            </ul>
+        </span>
+
+    </nav>
+
+    <main>
+        <section class="section-one">
+            <div class="div-one">
+                <img class="profile-image" src="ppt.jpg" alt="image">
+                <h2>Perry Gray</h2> <br>
+                <sub>Front-End Web developer &
+                    UI/UX Designer </sub> <br> <br>
+                <button class="twitter"><i class="fa-brands fa-twitter"></i></button> &nbsp; &nbsp;
+                <button class="facebook"><i class="fa-brands fa-facebook-f"></i></button> &nbsp; &nbsp;
+                <button class="instagram"><i class="fa-brands fa-instagram"></i></button>
+            </div>
+
+
+            <!-- DIV TWO -->
+            <div class="div-two">
+                <p>Key Skills</p>
+                <hr> <br>
+
+                <span class="html">
+                    <p>HTML</p>
+                    <p>96%</p>
+                </span>
+                <section class="percent-100">
+                    <div class="div1">
+                        <div class="skill-percent">
+                        </div>
+                    </div>
+                </section><br><br>
+
+
+                <span class="html">
+                    <p>CSS</p>
+                    <p>96%</p>
+                </span>
+                <section class="percent-100">
+                    <div class="div1">
+                        <div class="skill-percent">
+                        </div>
+                    </div>
+                </section><br><br>
+
+
+                <span class="html">
+                    <p>JS</p>
+                    <p>96%</p>
+                </span>
+                <section class="percent-100">
+                    <div class="div1">
+                        <div class="skill-percent">
+                        </div>
+                    </div>
+                </section><br><br>
+
+
+                <span class="html">
+                    <p>React</p>
+                    <p>96%</p>
+                </span>
+                <section class="percent-100">
+                    <div class="div1">
+                        <div class="skill-percent">
+                        </div>
+                    </div>
+                </section> <br><br>
+
+
+                <span class="html">
+                    <p>BootStrap</p>
+                    <p>96%</p>
+                </span>
+                <section class="percent-100">
+                    <div class="div1">
+                        <div class="skill-percent">
+                        </div>
+                    </div>
+                </section>
+
+
+            </div>
+        </section>
+
+        <section class="section-two">
+            <div class="section-two-div1">
+
+            </div>
+
+
+
+            <div class="section-two-div2">
+                <div class="divclass">
+                    <span><span class="numbers">10+ &nbsp;</span>Years Experience <br></span> <span><span
+                            class="numbers">122 &nbsp;</span> Completed Projects <br></span>
+                    <span><span class="numbers">114 &nbsp;</span> Happy Customers <br></span> <span><span
+                            class="numbers">20 &nbsp;</span> Honours & Awards <br></span>
+                </div>
+            </div>
+
+
+
+        </section>
+    </main>
+</body>
+
+</html>

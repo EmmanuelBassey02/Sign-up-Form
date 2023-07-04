@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* SECTION ONE */
+.nav {
+    display: flex;
+    gap: 250px;
+    background-color: navy;
+    justify-content: space-between;
+    height: 70px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-bottom: 2px solid rgb(76, 147, 124);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: x-large;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 45px;
+    font-weight: bolder;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.Download {
+    background-color: rgb(91, 148, 4);
+    border-radius: 60px;
+    width: 110px;
+    height: 30px;
+    border: none;
+    margin-top: -6px;
+}
+
+.designUI {
+    height: 230px;
+    width: 470px;
+}
+
+.image-container {
+    text-align: left;
+    height: 230px;
+    width: 400px;
+}
+
+.image {
+    height: 170px;
+    width: 160px;
+   
+}
+
+
+.designUI-image {
+    margin-left: 5px;
+    padding-left: 43px;
+    padding-top: 10px;
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    height: 350px;
+    width: 1100px;
+}
+
+.section-one {
+    height: 360px;
+    background: linear-gradient(to bottom Right, navy 30%, navy 30%, rgb(77, 120, 33));
+}
+
+.button-section-one {
+    color: white;
+    background-color: transparent;
+    border: 0.5px solid rgb(197, 195, 195);
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.sub-section-one {
+    color: white;
+}
+
+.h1-section-one {
+    color: aquamarine;
+}
+
+
+
+/* SECTION TWO */
+.section-two {
+    height: 160px;
+    text-align: center;
+    background-color: rgb(234, 231, 231);
+    padding-top: 30px;
+}
+
+.trusted-by {
+    font-size: 14px;
+    margin: auto;
+    width: 200px;
+    height: 20px;
+    color: rgb(136, 139, 139);
+    text-align: center;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.7);
+}
+
+.image-logo {
+    height: 85px;
+    margin-top: 25px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    /* border: 2px solid black; */
+    align-items: center;
+}
+
+.algolia {
+    height: 30px;
+    width: 130px;
+}
+
+.codecademy {
+    height: 70px;
+    width: 140px;
+}
+
+.hugo {
+    height: 50px;
+    width: 160px;
+}
+
+.aws {
+    height: 50px;
+    width: 110px;
+}
+
+.lapa {
+    height: 80px;
+    width: 140px;
+}
+
+.stripe {
+    font-size: 40px;
+    color: rgb(95, 23, 219);
+    font-weight: bolder;
+
+}
+
+
+
+/* SECTION THREE */
+.section-three {
+    height: 320px;
+    background-color: white;
+    padding-top: 35px;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.what-we-do {
+    font-size: 14px;
+    margin: auto;
+    width: 120px;
+    height: 20px;
+    color: rgb(136, 139, 139);
+    text-align: center;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.section-3 {
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn-more {
+    color: navy;
+    font-size: large;
+}
+
+.fa-laptop-code {
+    font-size: 35px;
+}
+
+
+/* SECTION FOUR */
+.section-four {
+    background-color: navy;
+    text-align: center;
+    height: 100px;
+    padding-top: 30px;
+    margin: auto;
+}
+
+
+.how-we-work {
+    margin: auto;
+    width: 200px;
+    height: 20px;
+    color: rgb(189, 192, 192);
+    text-align: center;
+    box-shadow: 1px 2px 10px rgba(255, 253, 253, 0.6);
+}
+
+
+.reliable-inf {
+    color: aqua;
+}
+
+
+.section-container-div {
+    padding-top: 30px;
+    background-color: navy;
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    padding-bottom: 20px;
+    height: 360px;
+}
+
+.container-1,
+.container-2,
+.container-3 {
+    height: 300px;
+    width: 280px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 25px;
+}
+
+.month {
+    font-size: 14px;
+   }
+
+   .section-four-container-button {
+    width: 120px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+   }
+
+
+
+/* SECTION FIVE */
+.section-five {
+    padding-top: 30px;
+    height: 380px;
+    background-color: rgb(236, 235, 234);
+}
+
+.meet-our-team {
+    font-size: 14px;
+    margin: auto;
+    width: 130px;
+    height: 20px;
+    color: rgb(136, 139, 139);
+    text-align: center;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.section-5-divs {
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+}
+
+
+.section-5-div1,
+.section-5-div2,
+.section-5-div3 {
+    text-align: center;
+    height: 280px;
+    width: 225px;
+}
+
+.section-5-images {
+    height: 210px;
+    width: 220px;
+}
+
+.names {
+    color: rgb(95, 23, 219);
+}
+
+.position-occupied {
+    color: rgb(112, 109, 109);
+}
+
+
+
+/* SECTION SIX */
+.section-six {
+    height: 300px;
+    padding-top: 30px;
+    text-align: center;
+    background-color: white
+}
+
+.we-love-open-source {
+    font-size: 14px;
+    margin: auto;
+    color: rgb(136, 134, 134);
+    width: 150px;
+    height: 20px;
+    text-align: center;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.fa-flag {
+    font-size: 40px;
+}
+
+.section-six-text {
+    color: black;
+    font-size: x-large;
+}
+
+.follow-github {
+    color: rgb(136, 139, 139);
+    font-size: small;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* SECTION SEVEN */
+.section-seven-footer {
+    height: 190px;
+    background-color: navy;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 40px;
+}
+
+.footer {
+    color: rgb(219, 215, 215);
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+}
+
+.copyright,
+.contact,
+.clients,
+.services {
+    font-size: large;
+    color: aliceblue;
+}
+
+.fa-twitter,
+.fa-facebook,
+.fa-instagram {
+    font-size: 30px;
+}
+
