@@ -96,8 +96,6 @@ h1 {
     height: 25px;
     border-radius: 5px;
     padding-left: 6px;
-    border-collapse: collapse;
-    outline: none;
     border: 1px rgb(100, 99, 99) solid;
 }
 
@@ -112,7 +110,9 @@ h1 {
     gap: 25px;
 }
 
-.ln-number {
+.ln-number,
+.password
+{
     display: flex;
     gap: 25px;
 }
@@ -148,3 +148,4 @@ h1 {
     text-align: right;
     padding-right: 100px;
 }
+

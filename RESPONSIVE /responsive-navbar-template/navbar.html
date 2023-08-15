@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class=" container nav__container">
+
+            <a href="/index.html" class="logo pb-3">
+                <img src="/IMG-20230606-WA00010.jpg" height="80" alt="RCCG">
+            </a>
+
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+
+            <div class=" nav__link hide">
+                <div class="nav__items">
+                    <a href="/index.html">Home</a>
+                    <a href="/pages/aboutUs.html">About Us</a>
+                    <a href="/pages/contactUs.html">Contact Us</a>
+                </div>
+
+                <div class="">
+                    <a href="/pages/community.html">
+                        <button className="font-medium">Join us today</button>
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </nav>
+
+
+
+
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLink = document.querySelector('.nav__link');
+
+        hamburger.addEventListener('click', () => {
+            navLink.classList.toggle('hide');
+        });
+    </script>
+</body>
+
+</html>

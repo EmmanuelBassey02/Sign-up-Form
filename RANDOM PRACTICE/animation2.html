@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Scroll Reveal Effect</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Scroll Down</div>
+    </div>
+
+    <script>
+
+const boxes = document.querySelectorAll('.box');
+
+function checkScroll() {
+    boxes.forEach(box => {
+        const boxTop = box.getBoundingClientRect().top;
+
+        if (boxTop < window.innerHeight * 0.8) {
+            box.style.opacity = '1';
+            box.style.transform = 'translateY(0)';
+        }
+    });
+}
+
+window.addEventListener('scroll', checkScroll);
+    </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .navbarx {
+            margin-top: 121px;
+            font-size: xx-large;
+            font-weight: bolder;
+            color: aliceblue;
+        }
+
+        .fa-bars{
+            display: none;
+            cursor: pointer;
+            font-size: 30px;
+            color: white;
+            user-select: none;
+            /* float: right; */
+        }
+
+        .mycheckBox {
+            display: none;
+        }
+
+        nav {
+            background: linear-gradient(to right, black, rgb(77, 22, 22), rgb(143, 3, 3));
+            padding: 1.5vw;
+            padding-left: 3vw;
+            width: 100%;
+            height: 80px;
+        }
+
+        nav ul {
+            float: right;
+            margin-right: 5vw;
+        }
+
+        nav ul li {
+            line-height: 40px;
+            list-style-type: none;
+            display: inline-block;
+        }
+
+        li:hover a {
+            border: 2px solid rgb(243, 239, 239);
+            border-radius: 6px;
+            color: black;
+            transition: 0.5s ease;
+            background-color: aliceblue;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: azure;
+            font-size: large;
+            font-weight: bolder;
+            padding: 7px 13px;
+        }
+
+
+
+        @media screen and (max-width: 850px) {
+            .fa-bars{
+            display: block;
+            }
+
+
+        nav {
+            padding-left: 25px;
+            padding-right: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 65px;
+        }
+
+        .navbarx {
+            margin: 20px;
+            margin-top: 15px;
+        }
+
+        ul {
+            position: absolute;
+            width: 100%;
+            display: none;
+            right: 0;
+            left: 0;
+            background-color: brown;
+            top: 65px;
+            text-align: center;
+            transition: all 1.5s;
+        }
+
+        nav  ul li {
+            display: block;
+            margin: 15px ;
+        }
+
+        nav ul li {
+            font-size: 20px;
+            color: bisque;
+            /* padding: 1px; */
+        }
+
+        li:hover {
+            background-color: bisque;
+        }
+
+        li:hover a {
+            background-color: bisque;
+            border: none;
+        }
+
+        li:hover ul {
+            background-color: bisque;
+        }
+
+
+
+
+
+        input[type=checkbox]:checked ~ ul {
+        display: block; 
+    }
+
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <label for="" class="navbarx">
+          NavbarX
+        </label>
+
+
+        <input type="checkbox" class="mycheckBox" id="myCheck">
+        <label for="myCheck" class="checkButton">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+           
+        <ul>
+            <li><a href="http://" class="active">•Home</a></li>
+            <li><a href="http://">•Blog</a></li>
+            <li><a href="http://">•About</a></li>
+            <li><a href="http://">•Services</a></li>
+            <li><a href="http://">•Products</a></li>
+        </ul>
+
+
+    </nav>
+</body>
+
+</html>

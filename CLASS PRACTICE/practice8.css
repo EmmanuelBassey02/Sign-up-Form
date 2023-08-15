@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+nav {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    gap: 170px;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background: linear-gradient(to right, rgb(6, 6, 196), rgb(69, 134, 4));
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+    gap: 35px;
+    padding-top: 10px;
+}
+
+h1 {
+    color: white;
+}
+
+button {
+    color: white;
+    background-color: blue;
+    height: 35px;
+    width: 70px;
+    font-weight: bolder;
+    border-radius: 7px;
+    border: none;
+    padding-top: -15px;
+}
+
+.section-1 {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    background: linear-gradient(to right, rgb(69, 92, 47), rgb(2, 2, 96));
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: fit-content;
+    padding-bottom: 30px;
+}
+
+p {
+    color: white;
+}
+
+.register-button {
+    width: 130px;
+    height: 40px;
+    color: white;
+    border-radius: 6px;
+    background-color: green;
+}
+
+.subscribe-button {
+    width: 130px;
+    height: 40px;
+    color: white;
+    border-radius: 6px;
+    background-color: blue;
+}
+
+
+.second-div {
+    padding-top: 25px;
+    display: flex;
+    
+}
+
+.img1 {
+    height: 330px;
+    width: 220px;
+    border-radius: 20px;
+    position: relative;
+    left: 80px;
+   bottom: 15px;
+    z-index: 1;
+}
+
+.img2 {
+    height: 330px;
+    width: 220px;
+    border-radius: 20px;
+}
+
+.section-two {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+}
+
+.section-two-div1,
+.section-two-div2,
+.section-two-div3 {
+    height: 250px;
+    width: 300px;
+    text-align: center;
+    padding: auto;
+    padding-top: 30px;
+}
+
+.fa-artstation,
+.fa-envelope,
+.fa-user-tie {
+    font-size: 55px;
+    color: green;
+}
+
+.text {
+    color: black;
+}
+
+.buttton-div {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+/* MEDIA QUERY (Max-width: 768px)*/
+
+@media screen and (max-width: 768px)  {
+    .section-1 {
+        display: block;
+        gap: 25px;
+        justify-content: space-between;
+        background: linear-gradient(to right, rgb(69, 92, 47), rgb(2, 2, 96));
+        padding-top: 50px;
+        padding-left: 35px;
+        padding-right: 35px;
+        height: 650px;
+}
+}
+
+
+
+@media screen and (max-width: 768px)  {
+    nav {
+        padding-left: 35px;
+        padding-right: 35px;
+        display: flex;
+        gap: 110px;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        background: linear-gradient(to right, rgb(6, 6, 196), rgb(69, 134, 4));
+    }
+}
+
+
+  @media screen and (max-width: 768px)  {
+.second-div {
+    padding-top: 20px;
+    display: flex;
+}
+}
+
+
+    
+@media screen and (max-width: 768px)  {
+.img1 {
+    height: 280px;
+    width: 180px;
+    border-radius: 20px;
+    position: relative;
+    left: 65px;
+   bottom: 10px;
+    z-index: 1;
+}
+}
+
+.img2 {
+    height: 280px;
+    width: 180px;
+    border-radius: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .section-two {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 40px;
+        display: flex;
+        gap: 80px;
+        justify-content: space-between;
+    }
+}
+
+
+@media screen and (max-width: 768px)  {
+    
+}
+
+
+
+/* MEDIA QUERY (Max-width: 425px)*/
+
+
